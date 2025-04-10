@@ -20,5 +20,7 @@ from main import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("__reload__/", include("django_browser_reload.urls")),
-    path('',views.blog_home,name='home')
+    path('',views.blog_home,name='home'),
+    path('blog_detail',views.blog_detail,name='blog_detail'),
+    path('profile',views.profile,name='profile')
 ]
